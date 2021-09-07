@@ -16,11 +16,12 @@ namespace Run
             int[] nums = { 3, 634, 65, 7, 667, 4, 8, 56, 45, 768, 4, 656, 3245, 7, 7, 76676, 87874, 436, 56, 788, 78, 43, 12, 32, 11, 1 };
 
 
-            QuiqSortFunction(nums);
+            //QuiqSortFunction(nums);
+            BubbleSort(nums);
 
 
 
-
+            Console.ReadKey();
         }
 
 
@@ -35,6 +36,25 @@ namespace Run
 
             QuiqSort qs = new QuiqSort();
             qs.Short(nums, 0, nums.Length - 1);
+
+            foreach (int num in nums)
+            {
+                Console.Write($"{num} ");
+            }
+            Console.WriteLine("");
+        }
+
+        public static void BubbleSort(int[] nums)
+        {
+            foreach (int num in nums)
+            {
+                Console.Write($"{num} ");
+            }
+            Console.WriteLine("");
+
+            int n = nums.Length;
+            BubbleSort bs = new BubbleSort();
+            bs.Sort(nums, n);
 
             foreach (int num in nums)
             {
