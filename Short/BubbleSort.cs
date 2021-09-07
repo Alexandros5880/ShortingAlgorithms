@@ -8,7 +8,7 @@ namespace Short
 {
     public class BubbleSort
     {
-        public void swap(ref int xp, ref int yp)
+        private void _swap(ref int xp, ref int yp)
         {
             int temp = xp;
             xp = yp;
@@ -24,7 +24,7 @@ namespace Short
                 {
                     if (arr[j] > arr[j+1])
                     {
-                        this.swap(ref arr[j], ref arr[j+1]);
+                        this._swap(ref arr[j], ref arr[j+1]);
                     }
                 }
             }

@@ -9,7 +9,12 @@ namespace Short
     public class QuiqSort
     {
 
-
+        private void _swap(ref int xp, ref int yp)
+        {
+            int temp = xp;
+            xp = yp;
+            yp = temp;
+        }
 
         private int _Partition(int[] nums, int low, int high)
         {
@@ -20,14 +25,10 @@ namespace Short
                 if(nums[j] <= pivot)
                 {
                     i++;
-                    int first = nums[i];
-                    nums[i] = nums[j];
-                    nums[j] = first;
+                    this._swap(ref nums[i], ref nums[j]);
                 }
             }
-            int last = nums[i + 1];
-            nums[i + 1] = nums[high];
-            nums[high] = last;
+            this._swap(ref nums[i+1], ref nums[high]);
             return i + 1;
         }
 

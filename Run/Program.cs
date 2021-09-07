@@ -12,12 +12,12 @@ namespace Run
     {
         static void Main(string[] args)
         {
-            
-            int[] nums = { 3, 634, 65, 7, 667, 4, 8, 56, 45, 768, 4, 656, 3245, 7, 7, 76676, 87874, 436, 56, 788, 78, 43, 12, 32, 11, 1 };
 
+            int[] nums_1 = { 3, 634, 65, 7, 667, 4, 8, 56, 45, 768, 4, 656, 3245, 7, 7, 76676, 87874, 436, 56, 788, 78, 43, 12, 32, 11, 1 };
+            QuiqSortFunction(nums_1);
 
-            //QuiqSortFunction(nums);
-            BubbleSort(nums);
+            int[] nums_2 = { 3, 634, 65, 7, 667, 4, 8, 56, 45, 768, 4, 656, 3245, 7, 7, 76676, 87874, 436, 56, 788, 78, 43, 12, 32, 11, 1 };
+            BubbleSort(nums_2);
 
 
 
@@ -28,6 +28,7 @@ namespace Run
 
         public static void QuiqSortFunction(int[] nums)
         {
+            Console.WriteLine("QuickShort:");
             foreach (int num in nums)
             {
                 Console.Write($"{num} ");
@@ -46,6 +47,7 @@ namespace Run
 
         public static void BubbleSort(int[] nums)
         {
+            Console.WriteLine("BubbleSort:");
             foreach (int num in nums)
             {
                 Console.Write($"{num} ");
