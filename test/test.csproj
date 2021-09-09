@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{32CE3E5A-8256-4C14-9CC7-DF5DFD3BCBB0}</ProjectGuid>
+    <ProjectGuid>{CE027197-FDC6-4BA5-BE1A-C621CFEC4387}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Run</RootNamespace>
-    <AssemblyName>Run</AssemblyName>
+    <RootNamespace>test</RootNamespace>
+    <AssemblyName>test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sorting\Sorting.csproj">
-      <Project>{d2b2faf2-b63a-4445-a128-dbc745fc37b7}</Project>
-      <Name>Sorting</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Short
+namespace Sorting
 {
     public class QuiqSort
     {
@@ -32,14 +32,13 @@ namespace Short
             return i + 1;
         }
 
-
         public void Sort(int[] nums, int low, int high)
         {
             if (low < high)
             {
                 int pivot = this._Partition(nums, low, high);
-                this.Short(nums, low, pivot - 1);
-                this.Short(nums, pivot + 1, high);
+                this.Sort(nums, low, pivot - 1);
+                this.Sort(nums, pivot + 1, high);
             }
         }
 

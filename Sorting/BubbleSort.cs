@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Short
+namespace Sorting
 {
-    public class BucketSort
+    public class BubbleSort
     {
         private void _swap(ref int xp, ref int yp)
         {
@@ -14,6 +14,7 @@ namespace Short
             xp = yp;
             yp = temp;
         }
+
         public void Sort(int[] arr, int n)
         {
             int i, j;
@@ -29,4 +30,5 @@ namespace Short
             }
         }
     }
+
 }
